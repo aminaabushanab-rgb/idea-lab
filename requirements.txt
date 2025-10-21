@@ -4,4 +4,4 @@ langchain
 langchain-openai
 faiss-cpu
 streamlit
-
+trafilatura
