@@ -1,3 +1,11 @@
 https://openai.com/research
 https://langchain.readthedocs.io/en/latest/
+https://langgraph.readthedocs.io/en/latest/
 https://faiss.ai/
+https://platform.openai.com/docs/assistants/overview
+https://python.langchain.com/docs/use_cases/rag/
+https://docs.ragas.io/en/latest/
+https://microsoft.github.io/autogen/
+https://en.wikipedia.org/wiki/Retrieval-augmented_generation
+https://en.wikipedia.org/wiki/Vector_database
+https://www.ycombinator.com/library
