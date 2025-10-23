@@ -9,6 +9,6 @@ if __name__ == "__main__":
     print(f"\nTop results for: {q}\n")
     for i, r in enumerate(results, 1):
         snippet = r["text"][:200].replace("\n", " ")
-        source = r.get("meta", {}).get("source", "unknown")
+        source = r.get("meta", {}).get("source_url", "unknown")
         print(f"{i}. ({source}) {snippet}...\n")
 
