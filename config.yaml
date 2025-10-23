@@ -2,3 +2,16 @@ project_name: idea-lab-pro
 llm_model: gpt-4o-mini
 embed_model: sentence-transformers/all-MiniLM-L6-v2
 
+sources_to_scrape:
+  - url: https://www.ycombinator.com/library
+    prefix: /library/
+  
+  - url: https://paulgraham.com/articles.html
+    prefix: .html
+  
+  - url: https://a16z.com/content/
+    prefix: /
+  
+  - url: https://review.firstround.com/all-articles
+    prefix: /
+
