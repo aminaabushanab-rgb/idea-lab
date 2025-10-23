@@ -2,10 +2,14 @@ import os, json
 from typing import List, Dict, Optional
 import numpy as np
 import faiss
-
+from sklearn.preprocessing import normalize
+import yaml
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from src.config import CONFIG
+from langchain_huggingface import HuggingFaceEmbeddings
 
+with open("config.yaml", "r") as f:
+    CONFIG = yaml.safe_load(f)
 
 class FAISSStore:
     """
@@ -25,8 +29,7 @@ class FAISSStore:
     # ---- internal helpers ----
     @staticmethod
     def _l2_normalize(X: np.ndarray) -> np.ndarray:
-        norms = np.linalg.norm(X, axis=1, keepdims=True) + 1e-12
-        return X / norms
+        return normalize(X, axis=1)
 
     # ---- build / add ----
     def build(self, texts: List[str], meta: Optional[List[Dict]] = None) -> None:
